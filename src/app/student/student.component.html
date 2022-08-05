@@ -1,0 +1,15 @@
+<table class="table">
+    <thead>
+        <th>Student Id</th>
+        <th>Student Name</th>
+        <th>Action</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students">
+            <td>{{student.studentId}}</td>
+            <td>{{student.name}}</td>
+            <td><button class="btn btn-primary" (click)="showDetail(student.studentId)">View</button></td>
+        </tr>
+    </tbody>
+</table>
+
